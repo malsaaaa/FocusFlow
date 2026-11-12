@@ -4,11 +4,9 @@
 
 FocusFlow helps you work in focused sessions: pick a task, start the timer, and take a break when the alarm rings. It is built with plain HTML, CSS and JavaScript, so there is nothing to install and no build step.
 
-<!-- Add screenshots here, for example:
 <p align="center">
-  <img src="docs/screenshots/timer.png" alt="FocusFlow timer" width="600">
+  <img src="images/screenshot.png" alt="FocusFlow timer" width="600">
 </p>
--->
 
 > A group project by a team of four students. See [Team](#team).
 
