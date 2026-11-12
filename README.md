@@ -1,196 +1,139 @@
-# FocusFlow - Pomodoro Timer with Music & Games
+# FocusFlow
 
-A beautiful and feature-rich Pomodoro Timer web application designed to enhance productivity and focus. Built with vanilla HTML, CSS, and JavaScript, FocusFlow combines time management, music, and entertainment in one seamless experience.
+**A Pomodoro timer with a task list, study music, ambient sounds and break-time games, all in a single web page.**
 
-![FocusFlow Logo](focusflow/images/logo.png)
+FocusFlow helps you work in focused sessions: pick a task, start the timer, and take a break when the alarm rings. It is built with plain HTML, CSS and JavaScript, so there is nothing to install and no build step.
 
-## ✨ Features
+<!-- Add screenshots here, for example:
+<p align="center">
+  <img src="docs/screenshots/timer.png" alt="FocusFlow timer" width="600">
+</p>
+-->
 
-### 🍅 Pomodoro Timer
-- **Customizable intervals**: 25-minute work sessions, 5-minute short breaks, 15-minute long breaks
-- **Visual feedback**: Dynamic sky backgrounds that change based on timer state
-- **Audio alerts**: Multiple alarm sounds (Kitchen Timer, Bell, Digital) with volume control
-- **Background sounds**: Ticking sounds, white noise, and brown noise for focus
-
-### 📋 Task Management
-- **Task creation**: Add tasks with estimated Pomodoro counts
-- **Drag & drop**: Reorder tasks with intuitive drag-and-drop interface
-- **Progress tracking**: Monitor completed Pomodoros and task completion
-- **Notes support**: Add detailed notes to tasks for better organization
-
-### 🎵 Integrated Music Player
-- **Multiple genres**: Lo-Fi, Classical, and Nature sounds
-- **Seamless playback**: Background music to enhance focus
-- **Progress tracking**: Visual progress bar for current track
-- **Easy controls**: Play, pause, next, and previous track controls
-
-### 🎮 Break-Time Games
-- **Chrome Dino**: Classic endless runner game
-- **Tetris**: Block-stacking puzzle game
-- **Pacman**: Retro arcade maze game
-- **Snake**: Classic snake growing game
-- **Popup windows**: Games open in dedicated windows for distraction-free breaks
-
-### ⚙️ Customizable Settings
-- **Timer durations**: Adjust work and break intervals to your preference
-- **Sound preferences**: Choose alarm sounds and background audio
-- **Volume controls**: Fine-tune audio levels for optimal experience
-- **Persistent storage**: Settings saved locally for consistent experience
-
-### 📊 Activity Logging
-- **Session tracking**: Monitor daily focus sessions and completed Pomodoros
-- **Export logs**: Download activity logs as text files
-- **Progress insights**: Track productivity patterns over time
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional software or dependencies required
-
-### Installation
-1. **Clone or download** the project files
-2. **Navigate** to the project directory
-3. **Open** `focusflow/index.html` in your web browser
-
-```bash
-# If using git
-git clone [repository-url]
-cd focusflow
-
-# Then open focusflow/index.html in your browser
-```
-
-### File Structure
-```
-focusflow/
-├── focusflow/
-│   ├── index.html          # Main application file
-│   ├── script.js           # JavaScript functionality
-│   ├── styles.css          # CSS styling
-│   ├── images/             # Background images and logo
-│   │   ├── logo.png
-│   │   ├── sky-background1.png
-│   │   ├── sky-background2.png
-│   │   ├── sky-background3.png
-│   │   └── sky-background4.png
-│   └── sounds/             # Audio files
-│       ├── bell.mp3
-│       ├── brown-noise.mp3
-│       ├── digital.mp3
-│       ├── kitchen-timer.mp3
-│       ├── ticking-mechanical.mp3
-│       ├── ticking-soft.mp3
-│       └── white-noise.mp3
-└── README.md
-```
-
-## 📖 How to Use
-
-### Basic Pomodoro Workflow
-1. **Add tasks** you want to work on today
-2. **Set estimated Pomodoros** (1 Pomodoro = 25 minutes of focused work)
-3. **Select a task** to work on
-4. **Start the timer** and focus on your task for 25 minutes
-5. **Take a break** for 5 minutes when the alarm rings
-6. **Repeat steps 4-5** until you complete your tasks
-
-### Timer Modes
-- **Pomodoro** (25 min): Focus time for productive work
-- **Short Break** (5 min): Quick rest between work sessions
-- **Long Break** (15 min): Extended rest after completing multiple Pomodoros
-
-### Music Player
-- Select your preferred genre (Lo-Fi, Classical, Nature)
-- Use play/pause controls to manage background music
-- Music continues playing across timer sessions
-
-### Settings Customization
-1. Click the **Settings** button in the header
-2. Adjust **timer durations** in seconds
-3. Choose **alarm sounds** and set volume levels
-4. Select **background sounds** for focus enhancement
-5. Click **Save** to apply changes
-
-### Activity Logging
-- Click the **Log** button to download your activity history
-- Logs include timestamps and session details
-- Use logs to analyze your productivity patterns
-
-## 🛠️ Technical Details
-
-### Technologies Used
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Modern styling with flexbox/grid layouts, backdrop filters, and animations
-- **Vanilla JavaScript**: No external dependencies or frameworks
-- **Web Audio API**: For sound management and playback
-- **Local Storage**: For persistent settings and task storage
-
-### Browser Compatibility
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-### Performance Features
-- **Efficient DOM manipulation**: Minimal reflows and repaints
-- **Local storage**: Fast data persistence without server requests
-- **Optimized assets**: Compressed images and audio files
-- **Responsive design**: Works on desktop and tablet devices
-
-## 👥 Development Team
-
-This project was created by a talented team of developers:
-
-- **Danial Hakim bin Mohd Arif** - Lead Developer
-- **Syed Danish Aslam Bin Syed Mohd Mahzan** - Frontend Developer
-- **Muhammad Danial Danny Bin Mazlan** - UI/UX Developer
-- **Asfa Danish Bin Hezri** - Backend Integration
-
-## 🎨 Design Philosophy
-
-FocusFlow combines productivity with aesthetics, featuring:
-- **Minimalist interface**: Clean design that doesn't distract from work
-- **Dynamic backgrounds**: Beautiful sky themes that change with timer states
-- **Smooth animations**: Subtle transitions that enhance user experience
-- **Accessibility**: High contrast colors and readable fonts
-
-## 🔧 Customization
-
-### Adding New Sounds
-1. Add audio files to the `sounds/` directory
-2. Update the audio elements in `index.html`
-3. Modify the sound selection options in `script.js`
-
-### Changing Backgrounds
-1. Replace image files in the `images/` directory
-2. Update CSS background references in `styles.css`
-3. Maintain consistent naming convention
-
-### Modifying Timer Defaults
-Edit the default values in `script.js`:
-```javascript
-let POMODORO_TIME = 1500;      // 25 minutes
-let SHORT_BREAK_TIME = 300;    // 5 minutes  
-let LONG_BREAK_TIME = 900;     // 15 minutes
-```
-
-## 📝 License
-
-This project is created for educational and personal use. Feel free to modify and distribute according to your needs.
-
-## 🤝 Contributing
-
-We welcome contributions! If you'd like to improve FocusFlow:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📞 Support
-
-For questions or support, please contact the development team or create an issue in the project repository.
+> A group project by a team of four students. See [Team](#team).
 
 ---
 
-**Made with ❤️ for focused studying and productive work sessions**
+## Features
+
+### Pomodoro timer
+- Three modes: **Pomodoro** (25 min), **Short Break** (5 min) and **Long Break** (15 min).
+- Durations are adjustable in Settings (entered in seconds).
+- The background changes with the timer mode, using a set of sky images.
+- When a session ends, the alarm plays and the timer resets to the current mode's duration.
+
+### Task list
+- Add tasks with an estimated number of Pomodoros and optional notes.
+- Edit, delete, mark complete, and **drag and drop** to reorder.
+- Completed Pomodoros count towards the selected task.
+- Tasks are saved in your browser (`localStorage`), so they are still there after a refresh.
+
+### Sound
+- **Alarms:** Kitchen, Bell or Digital, with volume and a repeat count (1 to 10 times).
+- **Background sounds while focusing:** soft ticking, mechanical ticking, white noise or brown noise, with their own volume.
+- All sound settings are saved in your browser.
+
+### Study music player
+- Three genres: **Lo-Fi**, **Classical** and **Nature**.
+- Play, pause, next and previous, with a track name and progress bar.
+- The music files are not included in this repository. See [Music files](#music-files).
+
+### Break-time games
+- Buttons for **Chrome Dino**, **Tetris**, **Pacman** and **Snake**.
+- Each opens a free online version in a popup window. The games are third-party sites, not part of this project.
+
+### Activity log
+- Records timer starts, stops and completed sessions during your current visit.
+- The **Log** button downloads it as a text file (`focusflow-log-YYYY-MM-DD.txt`).
+- The log is kept in memory only, so it is cleared when you close or refresh the page. Download it first if you want to keep it.
+
+## Getting started
+
+You need a modern browser (Chrome, Edge, Firefox or Safari). There are no dependencies to install.
+
+**Option 1: open the file**
+
+```bash
+git clone https://github.com/malsaaaa/FocusFlow.git
+cd FocusFlow
+```
+
+Then open `index.html` in your browser.
+
+**Option 2: serve it locally** (recommended, because some browsers restrict audio and storage on `file://` pages)
+
+```bash
+python -m http.server 8000
+```
+
+Then open http://localhost:8000.
+
+## How to use
+
+1. Click **Add Task**, name it, and set how many Pomodoros you expect it to take.
+2. Select the task you want to work on.
+3. Press **START** and focus for 25 minutes.
+4. When the alarm rings, switch to **Short Break** and relax, or play a game.
+5. Repeat, and take a **Long Break** after several Pomodoros.
+6. Open **Settings** to change durations, the alarm and the background sound, then press **Save**.
+
+## Project structure
+
+```
+FocusFlow/
+├── index.html       # Page structure, settings and modals
+├── script.js        # Timer, tasks, sounds, music player, games and log
+├── styles.css       # Styling and animations
+├── images/          # Logo and sky backgrounds
+└── sounds/          # Alarms and background sounds (mp3)
+```
+
+Default timer values are at the top of `script.js` and can be changed there:
+
+```javascript
+let POMODORO_TIME = parseInt(localStorage.getItem('pomodoroTime') || '1500');    // 25 minutes
+let SHORT_BREAK_TIME = parseInt(localStorage.getItem('shortBreakTime') || '300'); // 5 minutes
+let LONG_BREAK_TIME = parseInt(localStorage.getItem('longBreakTime') || '900');   // 15 minutes
+```
+
+## Music files
+
+The player expects these files in a `music/` folder:
+
+```
+music/
+├── lofi/       track1.mp3 ... track5.mp3
+├── classical/  track1.mp3 ... track3.mp3
+└── nature/     track1.mp3 ... track3.mp3
+```
+
+They are not in the repository, so the music player will not play until you add your own tracks with those names. Use music you have the right to use, such as royalty-free or Creative Commons tracks. Track names shown in the player are set in the `playlists` object in `script.js`.
+
+## Tech stack
+
+- HTML5, CSS3 and vanilla JavaScript (no frameworks)
+- HTML `<audio>` elements for alarms and background sounds
+- `localStorage` for tasks and settings
+- [Font Awesome](https://fontawesome.com/) 6 icons, loaded from a CDN
+
+## Limitations
+
+- Your tasks and settings live in your own browser. They do not sync between devices.
+- The timer runs in the page, so it can slow down or pause if the browser throttles a background tab. Keep the tab visible for accurate timing.
+- The break games are external websites and need an internet connection.
+- The music tracks are not included (see above).
+
+## Team
+
+Group project by:
+
+| Name | Role |
+| :--- | :--- |
+| Danial Hakim bin Mohd Arif | Lead Developer |
+| Syed Danish Aslam Bin Syed Mohd Mahzan | Frontend Developer |
+| Muhammad Danial Danny Bin Mazlan | UI/UX Developer |
+| Asfa Danish Bin Hezri | Backend Integration |
+
+## License
+
+This project was created for learning purposes. Add a `LICENSE` file (for example MIT) to state the terms. The Pomodoro Technique is a trademark of Francesco Cirillo, and this project is not affiliated with it.
