@@ -134,4 +134,6 @@ Group project by:
 
 ## License
 
-This project was created for learning purposes. Add a `LICENSE` file (for example MIT) to state the terms. The Pomodoro Technique is a trademark of Francesco Cirillo, and this project is not affiliated with it.
+Copyright (c) 2025 the project team. All rights reserved.
+
+This repository is public for viewing and portfolio purposes. No license is granted to copy, modify, distribute or use the code without the team's written permission. The Pomodoro Technique is a trademark of Francesco Cirillo, and this project is not affiliated with it.
